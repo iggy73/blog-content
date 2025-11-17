@@ -1,4 +1,3 @@
-
 ---
 title: "MCP Demystified: The Open Standard Powering the Next Wave of Agentic AI"
 author: "Eric Gee"
