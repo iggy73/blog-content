@@ -126,9 +126,9 @@ You can think of MCP’s flow as a structured conversation:
     }
     ```  
 
-5. **Secure Execution (Server):**  
+4. **Secure Execution (Server):**  
     The server validates the request and executes the actual logic — calling your email provider’s API, for example.  
-6. **Structured Result:**  
+5. **Structured Result:**  
     The server returns clean, schema-defined output, which the LLM uses to craft the final human-readable response.
 
 This creates a **tight, reliable loop** between language understanding and action execution.
