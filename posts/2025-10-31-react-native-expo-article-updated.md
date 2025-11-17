@@ -89,7 +89,7 @@ Don't throw everything into one folder. Organize by feature, not file type.
 
 A well-structured React Native app typically organizes code into feature folders (auth, profile, feed), with shared components, navigation, hooks, services, and utilities separated into their own directories. Each feature owns its screens, components, and logic. This prevents "component soup" as your app grows.
 
-**Note**: If you use expo-router, your `app/` directory replaces much of manual navigation setup with file-based routing. For non-router apps, the `src/navigation` pattern still scales beautifully.
+**Note**: If you use expo-router, your `` `app/` `` directory replaces much of manual navigation setup with file-based routing. For non-router apps, the `src/navigation` pattern still scales beautifully.
 
 📚 [Learn more about React Native project structure best practices](https://reactnative.express/app/project_structure)
 
