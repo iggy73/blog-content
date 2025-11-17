@@ -122,7 +122,7 @@ You can think of MCP’s flow as a structured conversation:
       "params": {
         "name": "send_email",
         "arguments": { "to": "...", "body": "..." }
-       }
+       }    
     }
     ```
 
