@@ -200,3 +200,6 @@ As AI systems become more agentic and integrated, MCP is shaping up to be one of
 
 And that’s why it matters.
 
+
+
+Built with ❤️ by One Ocean Labs
