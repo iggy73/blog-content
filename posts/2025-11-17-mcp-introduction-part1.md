@@ -99,12 +99,19 @@ The LLM doesn’t guess how to call a tool — it reads the manifest directly.
  This is one of the clever parts of MCP: the agent is never relying on “prompt magic” to invoke an API.
 
 ---
+## **The Communication Flow (Step-by-Step)**
+
+You can think of MCP’s flow as a structured conversation:
+
 1. **User Request:**
     “Generate a summary of this document and email it to the team.”
+
 2. **Intent Processing (Client):**
     The LLM determines it needs two tools:
+
     * read_document
     * send_email
+
 3. **Structured Tool Invocation:**
     The client sends a JSON-RPC request to the MCP server:
     <pre>
@@ -118,10 +125,16 @@ The LLM doesn’t guess how to call a tool — it reads the manifest directly.
 }
     </code>
     </pre>
+
 4. **Secure Execution (Server):**
     The server validates the request and executes the actual logic — calling your email provider’s API, for example.
+
 5. **Structured Result:**
     The server returns clean, schema-defined output, which the LLM uses to craft the final human-readable response.
+
+This creates a **tight, reliable loop** between language understanding and action execution.
+
+---
 ---
 
 ## **A Helpful Analogy: The AI “Concierge Desk”**
