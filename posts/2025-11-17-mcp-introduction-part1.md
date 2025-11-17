@@ -116,7 +116,7 @@ You can think of MCP’s flow as a structured conversation:
 3. **Structured Tool Invocation:**  
     The client sends a JSON-RPC request to the MCP server:
 
-    ```json 
+    ``` 
     {
       "method": "tools.invoke",
       "params": {
