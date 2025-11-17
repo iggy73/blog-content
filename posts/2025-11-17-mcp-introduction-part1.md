@@ -1,3 +1,13 @@
+---
+title: "MCP Demystified: The Open Standard Powering the Next Wave of Agentic AI"
+author: "Eric Gee"
+date: "2025-11-17"
+category: "AI"
+excerpt: "Unlock the true potential of agentic AI by understanding Model Context Protocol (MCP), the open standard that gives language models actual capability beyond just cognition."
+tags: ["AI", "MCP", "Architecture", "Best Practices"]
+readTime: "8 min read"
+---
+
 # MCP Demystified: The Open Standard Powering the Next Wave of Agentic AI
 
 *Introducing a multi-part blog series*
