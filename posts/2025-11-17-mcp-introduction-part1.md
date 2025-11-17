@@ -124,7 +124,7 @@ You can think of MCP’s flow as a structured conversation:
         "arguments": { "to": "...", "body": "..." }
        }    
     }
-    ```  
+    ```
 
 4. **Secure Execution (Server):**  
     The server validates the request and executes the actual logic — calling your email provider’s API, for example.  
