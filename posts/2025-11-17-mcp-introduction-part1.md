@@ -57,25 +57,25 @@ Key facts:
 3. **Structured Tool Invocation**  
    The client sends this JSON-RPC request:
 
-<pre><code class="language-json">
-{
-  "method": "tools.invoke",
-  "params": {
-    "name": "send_email",
-    "arguments": {
-      "to": "team@example.com",
-      "subject": "Document Summary",
-      "body": "Here is the summary..."
-    }
-  }
-}
-</code></pre>
+   <pre><code class="language-json">
+   {
+     "method": "tools.invoke",
+     "params": {
+       "name": "send_email",
+       "arguments": {
+         "to": "team@example.com",
+         "subject": "Document Summary",
+         "body": "Here is the summary..."
+       }
+     }
+   }
+   </code></pre>
 
 4. **Secure Execution (Server)**  
-   MCP server validates the request, checks permissions, and executes the real action (e.g., calls your email provider’s API).
+   MCP server validates the request, checks permissions, and executes the real action.
 
 5. **Structured Result**  
-   The server returns clean, schema-defined JSON that the LLM uses to generate the final human-readable response.
+   The server returns clean, schema-defined JSON.
 
 This creates a tight, reliable loop between language understanding and real-world action.
 
