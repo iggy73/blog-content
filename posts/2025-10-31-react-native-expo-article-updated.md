@@ -89,7 +89,7 @@ Don't throw everything into one folder. Organize by feature, not file type.
 
 A well-structured React Native app typically organizes code into feature folders (auth, profile, feed), with shared components, navigation, hooks, services, and utilities separated into their own directories. Each feature owns its screens, components, and logic. This prevents "component soup" as your app grows.
 
-**Note**: If you use expo-router, your `app/` directory replaces much of manual navigation setup with file-based routing. For non-router apps, the `src/navigation` pattern still scales beautifully.
+**Note**: If you use expo-router, your <code>app/</code> directory replaces much of manual navigation setup with file-based routing. For non-router apps, the <code>src/navigation</code> pattern still scales beautifully.
 
 📚 [Learn more about React Native project structure best practices](https://reactnative.express/app/project_structure)
 
@@ -145,7 +145,7 @@ The 2025 stack looks like this:
 - **Supabase**: End-to-end backend (auth, realtime, storage) with first-class Expo SDK support
 - **Edge Functions**: Cloudflare Workers or Vercel Edge for ultra-low latency
 
-Use `expo-secure-store` to keep tokens safe. Never store sensitive data in AsyncStorage alone.
+Use <code>expo-secure-store</code> to keep tokens safe. Never store sensitive data in AsyncStorage alone.
 
 ---
 
@@ -175,7 +175,7 @@ Users expect native-level performance. Monitor it.
 - **Sentry**: Production error tracking and performance monitoring
 - **Expo Analytics**: Built-in analytics or integrate Firebase/Amplitude
 
-Profile with Hermes engine (now default) and use `React.memo` / `useMemo` strategically. But remember: premature optimization kills velocity.
+Profile with Hermes engine (now default) and use <code>React.memo</code> / <code>useMemo</code> strategically. But remember: premature optimization kills velocity.
 
 **2025 Architecture**: With the new Fabric renderer, TurboModules, and JSI fully stable in React Native 0.76+, the framework now delivers near-native performance without custom patches. The old bridge bottlenecks are gone.
 
@@ -189,7 +189,7 @@ Mobile has different UX patterns. Respect platform conventions (iOS vs Android n
 
 ### 2️⃣ Ignoring Platform-Specific Code
 
-Sometimes you need `Platform.OS` checks. Don't fight it.
+Sometimes you need <code>Platform.OS</code> checks. Don't fight it.
 
 ### 3️⃣ Skipping TypeScript
 
@@ -201,7 +201,7 @@ Animations enhance UX when used wisely. With Reanimated 3 and Moti 3, performant
 
 ### 5️⃣ Poor Image Optimization
 
-Large images kill performance. Use `expo-image` with proper resize modes and caching.
+Large images kill performance. Use <code>expo-image</code> with proper resize modes and caching.
 
 ### 6️⃣ Not Testing on Real Devices
 
