@@ -52,26 +52,24 @@ Key facts:
    “Generate a summary of this document and email it to the team.”
 
 2. **Intent Processing**  
-   LLM decides it needs `read_document` + `send_email`.
+   LLM decides it needs <code>read_document</code> + <code>send_email</code>.
 
 3. **Structured Tool Invocation**  
    The client sends this JSON-RPC request:
 
-    <pre>
-    <code>
-    {
-      "method": "tools.invoke",
-      "params": {
-        "name": "send_email",
-        "arguments": {
-          "to": "team@example.com",
-          "subject": "Document Summary",
-          "body": "Here is the summary..."
-        }
-      }
+<pre><code class="language-json">
+{
+  "method": "tools.invoke",
+  "params": {
+    "name": "send_email",
+    "arguments": {
+      "to": "team@example.com",
+      "subject": "Document Summary",
+      "body": "Here is the summary..."
     }
-    </code>
-    </pre>
+  }
+}
+</code></pre>
 
 4. **Secure Execution (Server)**  
    MCP server validates the request, checks permissions, and executes the real action (e.g., calls your email provider’s API).
