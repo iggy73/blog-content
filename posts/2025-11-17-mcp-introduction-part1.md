@@ -48,13 +48,13 @@ Key facts:
 
 ## The Communication Flow (Step-by-Step)
 
-**User Request**  
+- **User Request**  
    “Generate a summary of this document and email it to the team.”
 
-**Intent Processing**  
+- **Intent Processing**  
    LLM decides it needs <code>read_document</code> + <code>send_email</code>.
 
-**Structured Tool Invocation**  
+- **Structured Tool Invocation**  
    The client sends this JSON-RPC request:
 
    <pre><code class="language-json">
@@ -71,10 +71,10 @@ Key facts:
    }
    </code></pre>
 
-**Secure Execution (Server)**  
+- **Secure Execution (Server)**  
    MCP server validates the request, checks permissions, and executes the real action.
 
-**Structured Result**  
+- **Structured Result**  
    The server returns clean, schema-defined JSON.
 
 This creates a tight, reliable loop between language understanding and real-world action.
