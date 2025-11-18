@@ -117,13 +117,13 @@ You can think of MCP’s flow as a structured conversation:
    
     <pre>
     <code>
-{
-  "method": "tools.invoke",
-  "params": {
-    "name": "send_email",
-    "arguments": { "to": "...", "body": "..." }
-   }
-}
+    {
+      "method": "tools.invoke",
+      "params": {
+        "name": "send_email",
+        "arguments": { "to": "...", "body": "..." }
+       }
+    }
     </code>
     </pre>
 
