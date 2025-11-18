@@ -62,7 +62,7 @@ Key facts:
   <li>
     <strong>Structured Tool Invocation</strong><br/>
     The client sends this JSON-RPC request:
-  </li>
+
     <pre><code class="language-json">
 {
   "method": "tools.invoke",
@@ -76,7 +76,7 @@ Key facts:
   }
 }
     </code></pre>
-  
+  </li>
 
   <li>
     <strong>Secure Execution (Server)</strong><br/>
