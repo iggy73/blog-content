@@ -57,7 +57,8 @@ Key facts:
 3. **Structured Tool Invocation**  
    The client sends this JSON-RPC request:
 
-```json
+    <pre>
+    <code>
 {
   "method": "tools.invoke",
   "params": {
@@ -69,7 +70,8 @@ Key facts:
     }
   }
 }
-```
+    </code>
+    </pre>
 
 4. **Secure Execution (Server)**  
    MCP server validates the request, checks permissions, and executes the real action (e.g., calls your email provider’s API).
