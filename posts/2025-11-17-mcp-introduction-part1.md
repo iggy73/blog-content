@@ -59,17 +59,17 @@ Key facts:
 
     <pre>
     <code>
-{
-  "method": "tools.invoke",
-  "params": {
-    "name": "send_email",
-    "arguments": {
-      "to": "team@example.com",
-      "subject": "Document Summary",
-      "body": "Here is the summary..."
+    {
+      "method": "tools.invoke",
+      "params": {
+        "name": "send_email",
+        "arguments": {
+          "to": "team@example.com",
+          "subject": "Document Summary",
+          "body": "Here is the summary..."
+        }
+      }
     }
-  }
-}
     </code>
     </pre>
 
