@@ -48,46 +48,34 @@ Key facts:
 
 ## The Communication Flow (Step-by-Step)
 
-<ol>
-  <li>
-    <strong>User Request</strong><br/>
-    “Generate a summary of this document and email it to the team.”
-  </li>
+1. **User Request**  
+   “Generate a summary of this document and email it to the team.”
 
-  <li>
-    <strong>Intent Processing</strong><br/>
-    LLM decides it needs <code>read_document</code> + <code>send_email</code>.
-  </li>
+2. **Intent Processing**  
+   LLM decides it needs <code>read_document</code> + <code>send_email</code>.
 
-  <li>
-    <strong>Structured Tool Invocation</strong><br/>
-    The client sends this JSON-RPC request:
+3. **Structured Tool Invocation**  
+   The client sends this JSON-RPC request:
 
-    <pre><code class="language-json">
-{
-  "method": "tools.invoke",
-  "params": {
-    "name": "send_email",
-    "arguments": {
-      "to": "team@example.com",
-      "subject": "Document Summary",
-      "body": "Here is the summary..."
-    }
-  }
-}
-    </code></pre>
-  </li>
+   <pre><code class="language-json">
+   {
+     "method": "tools.invoke",
+     "params": {
+       "name": "send_email",
+       "arguments": {
+         "to": "team@example.com",
+         "subject": "Document Summary",
+         "body": "Here is the summary..."
+       }
+     }
+   }
+   </code></pre>
 
-  <li>
-    <strong>Secure Execution (Server)</strong><br/>
-    MCP server validates the request, checks permissions, and executes the real action (e.g., calls your email provider’s API).
-  </li>
+4. **Secure Execution (Server)**  
+   MCP server validates the request, checks permissions, and executes the real action.
 
-  <li>
-    <strong>Structured Result</strong><br/>
-    The server returns clean, schema-defined JSON that the LLM uses to generate the final human-readable response.
-  </li>
-</ol>
+5. **Structured Result**  
+   The server returns clean, schema-defined JSON.
 
 This creates a tight, reliable loop between language understanding and real-world action.
 
