@@ -121,7 +121,7 @@ You can think of MCP's flow as a structured conversation:
        "arguments": { "to": "...", "body": "..." }
      }
    }
-    ```
+
 ---
 
 4. **Secure Execution (Server):**  
