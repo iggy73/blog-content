@@ -94,9 +94,9 @@ No matter how quirky the guest’s accent, the concierge uses one radio, one for
 
 Real-world wins already showing up:
 
--Logistics agents rerouting shipments using live weather + inventory MCP servers
--Factory AI polling SCADA systems in real time to prevent downtime
--Personal assistants that actually touch your calendar, email, and files – securely
+- Logistics agents rerouting shipments using live weather + inventory MCP servers
+- Factory AI polling SCADA systems in real time to prevent downtime
+- Personal assistants that actually touch your calendar, email, and files – securely
 
 ---
 
