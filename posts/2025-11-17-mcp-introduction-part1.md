@@ -32,10 +32,10 @@ The game-changer status? Scalability. Traditional AI setups scale like a house o
 MCP is an open, model-agnostic, transport-agnostic JSON-RPC protocol that lets any LLM safely discover, invoke, and receive results from external tools through a single standardized interface.
 Key facts (no hype, just truth):
 
--Launched by Anthropic in late 2024, immediately open-sourced
--Already adopted by OpenAI, Google, and thousands of independent servers
--Secure by design: credentials and execution stay behind a gateway the model never touches
--Works over HTTP, WebSockets, or even stdin/stdout – you pick
+- Launched by Anthropic in late 2024, immediately open-sourced
+- Already adopted by OpenAI, Google, and thousands of independent servers
+- Secure by design: credentials and execution stay behind a gateway the model never touches
+- Works over HTTP, WebSockets, or even stdin/stdout – you pick
 
 ---
 
