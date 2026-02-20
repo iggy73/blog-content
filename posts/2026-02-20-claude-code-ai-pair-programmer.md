@@ -2,9 +2,9 @@
 title: "Claude Code in 2026: Your AI Pair Programmer That Actually Works"
 author: "Matthew Dutchess"
 date: "2026-02-20"
-category: "Development Tools"
+category: "AI"
 excerpt: "Claude Code isn't another chatbot where you copy-paste code. It lives in your terminal, understands your entire codebase, edits multiple files, runs tests, and handles git workflows. Here's how to actually use it."
-tags: ["Claude Code", "AI Development", "Productivity", "Developer Tools", "Anthropic"]
+tags: ["Claude Code", "AI", "AI Development", "Productivity", "Developer Tools", "Anthropic"]
 readTime: "20 min read"
 ---
 
