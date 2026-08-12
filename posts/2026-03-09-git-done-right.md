@@ -277,3 +277,7 @@ Good Git hygiene isn't optional in 2026. It's table stakes.
 ---
 
 **👉 What's the worst Git sin you've seen on a real project?** Drop it in the comments — we've all got war stories.
+
+---
+
+Crafted with ❤️ by One Ocean Labs
